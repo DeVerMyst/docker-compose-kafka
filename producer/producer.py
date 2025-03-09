@@ -9,6 +9,7 @@ load_dotenv()
 
 producer = KafkaProducer(
     bootstrap_servers=os.getenv("KAFKA_BOOTSTRAP_SERVERS"),
+    linger_ms=0,
     value_serializer=lambda v: json.dumps(v.tolist()).encode('utf-8')
 )
 
