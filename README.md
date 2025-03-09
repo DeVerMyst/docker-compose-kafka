@@ -9,14 +9,25 @@ kafka-project/
 │   ├── producer.py
 │   ├── Dockerfile
 │   ├── requirements.txt
+│   ├── wait-for-kafka.sh
 │   └── .env
 ├── consumer/
 │   ├── consumer.py
 │   ├── Dockerfile
 │   ├── requirements.txt
+│   ├── wait-for-kafka.sh
 │   └── .env
 ├── docker-compose.yml
 └── README.md
+```
+
+### wait for kafka
+```bash
+xxx /c/GITHUB/docker-compose-kafka (main)
+$ chmod +x producer/wait-for-kafka.sh consumer/wait-for-kafka.sh
+
+xxx /c/GITHUB/docker-compose-kafka (main)
+$ chmod +x consumer/wait-for-kafka.sh consumer/wait-for-kafka.sh
 ```
 
 ## Prérequis
